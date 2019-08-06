@@ -1,0 +1,29 @@
+{
+	"fastdfs" : 
+	{
+		"client" : "/etc/fdfs/client.conf"
+	},
+	"mysql" : 
+	{
+		"database" : "cloud_disk",
+		"host" : "localhost",
+		"passwd" : "930201@Gkh",
+		"port" : 33060,
+		"user" : "guo"
+	},
+	"redis" : 
+	{
+		"ip" : "127.0.0.1",
+		"port" : 6379
+	},
+	"storage_server" : 
+	{
+		"ip" : "192.168.91.100",
+		"port" : 80
+	},
+	"web_server" : 
+	{
+		"ip" : "192.168.91.100",
+		"port" : 80
+	}
+}

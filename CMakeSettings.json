@@ -1,0 +1,32 @@
+﻿{
+  "configurations": [
+    {
+      "name": "CloudDisk",
+      "generator": "Unix Makefiles",
+      "configurationType": "Debug",
+      "buildRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.USERPROFILE}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
+      "cmakeExecutable": "$(CMAKE_INSTALL_PREFIX)/cmake",
+      "remoteCopySourcesExclusionList": [ ".vs", ".git" ],
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "linux_x64" ],
+      "variables": [
+        {
+          "name": "CMAKE_INSTALL_PREFIX",
+          "value": "/usr/bin",
+          "type": "PATH"
+        }
+      ],
+      "remoteMachineName": "${defaultRemoteMachineName}",
+      "remoteCMakeListsRoot": "~/Remote/${name}",
+      "remoteBuildRoot": "~/Remote/${name}/build",
+      "remoteInstallRoot": "~/Remote/${name}/install",
+      "remoteCopySources": true,
+      "rsyncCommandArgs": "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput": false,
+      "remoteCopySourcesMethod": "sftp"
+    }
+  ]
+}
